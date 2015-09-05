@@ -29,17 +29,16 @@ interactions:
         - Turn that frown upside down! :)
 
     - pattern:
-        regex: (\W|^)cold(\W|$)
+        regex: (\W|^)(how's|how is) the weather(\W|$)
         options: i
       event: forecast
       message:
         - >-
-          $user: for comparison, it's currently $temperature° $units in Siberia
-        - It could be worse. It’s currently $temperature° $units in Oymyakon, Russia
+          $user: it's currently $temperature° $units at General Assembly.
       location:
-        latitude: 63.460833
-        longitude: 142.785833
-      units: C
+        latitude: 40.740154
+        longitude: -73.990252
+      units: F
 
     - pattern:
         regex: (\W|^)(good ?)?bye(\W|$)
@@ -84,7 +83,7 @@ interactions:
       tag: giggling
       message: >-
         $user: $gif
-      probability: 0.4
+      probability: 1
 
     - pattern:
         regex: (\W|^)tired(\W|$)
@@ -112,10 +111,10 @@ interactions:
     - pattern:
         regex: (\W|^)ugh(\W|$)
       event: say
-      message: would you like a hug, $user?
-      probability: 0.2
+      message: ¯\_(ツ)_/¯ would you like a hug, $user?
+      probability: 1
 
     - pattern:
-        regex: (\W|^)hot(\W|$)
+        regex: (\W|^)Are you there?(\W|$)
       event: say
-      message: you sure are.
+      message: R2 standing by!!
