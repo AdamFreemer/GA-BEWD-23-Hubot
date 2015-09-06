@@ -113,8 +113,3 @@ interactions:
       event: say
       message: ¯\_(ツ)_/¯ would you like a hug, $user?
       probability: 1
-
-    - pattern:
-        regex: (\W|^)are you there(\W|$)
-      event: say
-      message: R2 standing by!!
