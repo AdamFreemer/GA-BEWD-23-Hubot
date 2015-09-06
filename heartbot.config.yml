@@ -29,7 +29,7 @@ interactions:
         - Turn that frown upside down! :)
 
     - pattern:
-        regex: (\W|^)(how's|how is) the weather(\W|$)
+        regex: (\W|^)weather(\W|$)
         options: i
       event: forecast
       message:
