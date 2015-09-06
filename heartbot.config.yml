@@ -115,6 +115,6 @@ interactions:
       probability: 1
 
     - pattern:
-        regex: (\W|^)Are you there?(\W|$)
+        regex: (\W|^)are you there(\W|$)
       event: say
       message: R2 standing by!!
