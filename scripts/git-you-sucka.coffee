@@ -15,5 +15,5 @@
 
 module.exports = (robot) ->
   robot.hear /\bgit\b/, (msg) ->
-    if Math.random() > 0 then msg.reply 'ima git you sucka'
+    if Math.random() > 0 then msg.reply 'ima git me some new droid parts...'
 
